@@ -10,10 +10,9 @@ public static int findmin1(int arr[]){
         int mid=(left+right)/2;
         if(arr[mid]<arr[right]){
           right=mid;
-          left=mid+1;
         }
         else{
-            right=mid-1;
+            left=mid+1;
         }
     }
     return left;
